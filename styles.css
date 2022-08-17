@@ -73,7 +73,7 @@ html {
         display: none;
         position: fixed;
         bottom: 30px;
-        right: 50px;
+        right: 20px;
         width: 64px;
         height: 64px;
         border-radius: 50%;
@@ -130,16 +130,6 @@ html {
     }
 
     100% {
-        right: 50px;
-    }
-}
-
-@keyframes show_adaptive {
-    0% {
-        right: -10px;
-    }
-
-    100% {
         right: 20px;
     }
 }
@@ -152,6 +142,5 @@ html {
     .main .btn-top {
         right: 20px;
         animation-duration: .3s;
-        animation-name: show_adaptive;
     }
 }
