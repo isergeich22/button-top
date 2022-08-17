@@ -97,16 +97,6 @@ html {
             height: 32px;
         }
 
-@media screen and (max-width: 1000px) {
-        .red, .orange, .yellow, .green, .blue {
-            font-size: 1rem;
-        }
-
-        .main .btn-top {
-            right: 20px;
-        }
-}
-
 @keyframes btnAnimation {
     0% {
         width: 64px;
@@ -141,5 +131,27 @@ html {
 
     100% {
         right: 50px;
+    }
+}
+
+@keyframes show_adaptive {
+    0% {
+        right: -10px;
+    }
+
+    100% {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .red, .orange, .yellow, .green, .blue {
+        font-size: 1rem;
+    }
+
+    .main .btn-top {
+        right: 20px;
+        animation-duration: .3s;
+        animation-name: show_adaptive;
     }
 }
